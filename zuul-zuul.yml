@@ -12,7 +12,7 @@ logging:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eureka-eureka.lrz-test:8761/eureka/
+      defaultZone: http://eureka-eureka:8761/eureka/
   instance:
     preferIpAddress: true
     instance-id: ${spring.cloud.client.ipAddress}:${server.port}
@@ -20,8 +20,8 @@ eureka:
 zuul:
   routes:
     testa:
-      path: /liaojian/**
-      serviceId: liaoj-client
+      path: /test1/**
+      serviceId: asfdemo-client
     
 spring:
   sleuth:
